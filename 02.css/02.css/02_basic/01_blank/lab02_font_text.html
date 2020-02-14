@@ -7,24 +7,34 @@
     <title>CSS 폰트와 텍스트</title>
     <style>
         p {
+            color: green;
+            font-size: 25px;
             /* font-family */
+            font-family: "궁서";
+            /* 웹 브라우저 기본 글씨체는 맑은 고딕 그 외에도 굴림, 궁서, 바탕 등을 설정 가능 */
+            line-height: 1; /* 100%과 같음, 텍스트 크기만큼의 줄간격을 가진다 */
         }
         #fontSize {
-
+            font-size: 50px;
         }
         #fontStyle {
-
+            font-style: italic;
         }
         #fontWeight {
-
+            font-weight: bold;
         }
         #fontShortHand {
-
+            /* font: font-style font-weight font-size */
+            /* line-height font-family */
+            font: italic bold 20px/150% "맑은 고딕"
         }
         .textTest {
-
+            text-align: center;
             /* em, i */
-
+            /* text-decoration: underline; */ /* 밑줄 */
+            /* text-decoration: overline; */ /* 윗줄 */
+            /* text-decoration: line-through; 가운데줄 */
+            text-decoration: none; /* 링크 밑줄된거 표시하고 싶지않다. 이렇게 쓰면 된다 */
         }
     </style>
 </head>

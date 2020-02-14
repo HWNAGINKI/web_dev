@@ -12,29 +12,32 @@
             font-size: 40px;
             color: brown;
         }
-
+        /* 선택자 뒤에 :(콜론)을 붙이고 특정 이벤트마다 적용할 스타일을 설정할 수 있다. 이를 가상 클래스라고 한다
+        그러나, 인라인,내부스타일,외부스타일과 전혀 관계없음! 선택자가 적용될 뿐임 */
         a:hover {
-
+            /* hover(호버)는 커서를 해당 요소에 위치했을 때 스타일을 지정 */
+            background-color: aqua;
         }
 
-        a:active {
-
+        a:active { /* 선택자가 적용되면 a { }에 속성 적용하지 않음 */
+            background-color: crimson;
         }
 
         a:visited {
-
+            color: darkgreen;
         }
 
         a:link {
-
+            color: darkmagenta;
         }
 
-        div:hover {
-
+        div:hover { /* 커서가 올릴 때 */
+            background-color: black;
+            color: white;
         }
 
-        div:active {
-
+        div:active { /* 마우스 클릭할 때 */
+            text-decoration: underline;
         }
     </style>
 </head>

@@ -6,28 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS 리스트와 테이블</title>
     <style>
-        ul {
-            background-color: ;
+        ul { /* 순서없는 리스트 */
+            background-color: pink;
+            /* list-style-type: decimal; */
+            list-style-image: url(https://cdn0.iconfinder.com/data/icons/iconsweets2/40/whale.png);
         }
         .inside {
-
+            list-style-position: inside;
         }
-        ol {
-
+        ol { /* 순서있는 리스트 */
+            list-style-type: lower-alpha;
+            list-style-type: disc;
         }
-        .shortHand {
-
+        .shortHand { /*  */
+             list-style: circle inside url(https://cdn0.iconfinder.com/data/icons/iconsweets2/40/whale.png);
         }
         table, td {
-
+            border: 1px solid greenyellow; /* solid : 고체, 딱딱하다 */
         }
         table {
-
+            border-collapse: collapse; /* 경계선 */
         }
-        td {
+        td { /* 이미지는 px밖에 지정하지만 CSS에서는 제한이 없음*/
+            width: 50px;
+            height: 100px;
         }
         .bottom {
-
+            vertical-align: middle;
         }
     </style>
 </head>
