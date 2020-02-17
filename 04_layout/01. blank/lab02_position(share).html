@@ -25,7 +25,7 @@
         /* relative position */
         /* 기본 위치(static으로 지정되었을 때의 위치)를 기준으로 좌표 프로퍼티(top, bottom, left, right)를 사용하여 위치를 이동 */
         /* static에선 좌표 프로퍼티 속성 작동 X */
-
+        /* 포지션을 릴레이티브로 바꿔주고 부모 요소를 기준으로 움직이는 것 */
         .relative-box {
             position: relative; /* 위치 */
             top: -50px; /* 부모 요소를 기준 */
@@ -63,6 +63,7 @@
         /* 부모 요소와 관계없이 브라우저의 viewport를 기준으로 좌표프로퍼티(top, bottom, left, right)을 사용하여 위치를 이동 (뷰포트는 웹페이지가 사용자에게 보여지는 영역을 의미)
         스크롤이 되더라도 화면에서 사라지지 않고 항상 같은 곳에 위치
         fixed 프로퍼티 선언 시, block 요소의 width는 inline 요소와 같이 content에 맞게 변화되므로 적절한 width를 지정하여야 함, 팝업창 쓸 때 사용 */
+        /* 브라우저에서 그 위치에 고정된 것! */
         .fixed-box {
             position: fixed;
             color: #e55c3c;
