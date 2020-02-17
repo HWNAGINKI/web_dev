@@ -15,28 +15,28 @@
 
         .px {
             /* 스크린의 픽셀(pixel)을 기준으로 하는 절대적 크기 */
-            width: 320px;
-            height: 160px;
+            width: 480px;
+            height: 80px;
         } /* 블록요소라서 빈 공간이 생겨서! */
 
         .percent {
             /* 브라우저 크기의 % */
             /* 상위요소에 width나 height가 지정됐을 경우 해당만큼 %적용 */
             width: 50%;
-            height: 200px;
+            height: 400px;
         }
 
         .em {
             /* 자신의 폰트 크기가 1이라고 할 때 배수 단위 */
             font-size: 20px;
             width: 10em;
-            height: 10em;
+            height: 10em; 
             /* 폰트 크기는 상속? 부모 요소한테 돌려 받는 하나가 폰트 크기 */
         }
 
         .em2 {
             /* 상위 요소의 폰트 크기를 상속 받음 */
-            width: 5em;
+            width: 8em;
             height: 5em;
         }
 
@@ -56,6 +56,9 @@
         /* 최대 & 최소 */
         .maxmin {
             /* 300px ~ 600px 사이에서 화면에 50%를 차지하는 요소 */
+            width: 50%;
+            min-width: 200px;
+            max-width: 400px;
         }
     </style>
 
@@ -69,10 +72,10 @@
         
     </div>
     <br>
-    <!-- <div class="px">
+    <div class="px">
         px를 통한 크기 조정
         (가로 100%, 세로는 컨텐츠 양에 따라 달라짐)
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias non veritatis harum consequatur impedit deleniti pariatur a qui omnis illum. Reprehenderit doloribus facilis ullam deleniti ab rerum minima, consequuntur necessitatibus.
+        <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias non veritatis harum consequatur impedit deleniti pariatur a qui omnis illum. Reprehenderit doloribus facilis ullam deleniti ab rerum minima, consequuntur necessitatibus.
         Unde, id? Tempore officiis delectus nostrum dolor doloremque ea tempora dignissimos fugit sit aliquid, consequuntur impedit porro deserunt sequi adipisci accusamus vero odit quia iure exercitationem culpa? Magnam, itaque assumenda.
         Harum hic repellat aperiam? Veritatis vero obcaecati perferendis quam error enim sapiente, magnam expedita fuga nesciunt nulla voluptatibus! Aliquid culpa ducimus minus iusto nihil iste maiores pariatur ipsam magni doloribus!
         Voluptatum quo ad repellat eveniet quos, unde totam debitis expedita cum! Facere praesentium odio minima velit nesciunt nulla aliquam adipisci corrupti! Maxime eos impedit accusantium minus. Nulla eaque ipsa non.
@@ -91,17 +94,16 @@
         Quis, harum debitis optio exercitationem, quae, quos autem quidem consectetur aperiam incidunt architecto sapiente maiores. Itaque voluptatibus animi nisi non voluptates asperiores obcaecati, minus sapiente sequi. Adipisci ut quis qui.
         Doloribus, accusamus doloremque est aspernatur dolore quos quod harum ullam minus facere vero asperiores. Amet, doloribus blanditiis. Molestiae, cum sunt quisquam veniam modi eos, quasi consequuntur nobis quae doloribus consequatur?
         Delectus, magnam. Quod fuga assumenda, tempore sequi numquam exercitationem cupiditate cum at, suscipit quae dolorem similique impedit vitae dignissimos, voluptatum accusamus provident corporis voluptate error repudiandae nesciunt rerum necessitatibus minus.
-        Aspernatur distinctio in veniam voluptas adipisci autem perspiciatis cupiditate laudantium suscipit reiciendis soluta, quibusdam repudiandae aliquid placeat, enim facere quidem deleniti voluptatem aut sit dolorum quo iusto totam cum. Nesciunt.
-    </div> -->
+        Aspernatur distinctio in veniam voluptas adipisci autem perspiciatis cupiditate laudantium suscipit reiciendis soluta, quibusdam repudiandae aliquid placeat, enim facere quidem deleniti voluptatem aut sit dolorum quo iusto totam cum. Nesciunt. -->
+    </div>
     <br>
     <div class="percent">
         %를 통한 크기 조정
         <div style="height: 50%";>%</div>
+        <br>
     </div>
-    <br>
     <div class="em">
         em을 통한 크기 조정
-
         <div class="em2">
             em 속 em
         </div>

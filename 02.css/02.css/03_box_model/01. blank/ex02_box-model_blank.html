@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자연을 사랑하자</title>
+    <style>
+    div {
+        /*  box-sizing을 border-box로 설정
+            좌우 중앙 정렬
+            */
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: rgba(96, 233, 155, 0.787) dashed 30px;
+            border-radius: 90px 0px 90px 0px;
+    }
+    #bg {
+        /*  가로 640px, 세로 480px
+            배경색 rgba(20, 20, 20, 0.7) 
+            (rgba : https://webdir.tistory.com/406)
+            배경 이미지 : https://images.unsplash.com/photo-1553563777-e7f319af6b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+            반복 없음
+            배경 이미지 사이즈 : 900px 675px
+            배경 이미지 왼쪽 방향으로 30px 이동
+            상단 패딩 100px
+            */
+            width: 700px;
+            height: 920px;
+            background: rgba(20, 20, 20, 0.7) url(https://cdn.pixabay.com/photo/2019/01/09/14/13/leaves-3923413_960_720.jpg) no-repeat;
+            background-size: 700px 920px;
+            background-position: -30px -30px;
+            padding-top: 100px;            
+        /* 참고 : https://coderap.tistory.com/137 */
+    }
+    #content{
+        /*  가로 : 부모 요소의 50%
+            글자색 흰색, 텍스트 중앙정렬, 글자 크기 11px
+            테두리 흰색 실선 10px, 패딩 16px
+        */
+        width: 50%;
+        color: rgb(188, 255, 101);
+        text-align: center;
+        border: rgb(183, 241, 107) dotted 10px;
+        font-size:20px;
+        padding: 30px;
+
+    }
+    </style>    
+</head>
+<body>
+    <div id="bg">
+        <div id="content">
+            <h1>나뭇잎 소개</h1>
+            <p style="color: white;">일반적으로 잎은 잎몸, 잎자루, 턱잎 등으로 이루어져 있다.<br>
+                잎몸은 잎의 편평한 부분으로 광합성과 증산 작용, 호흡 등 식물의 중요한 작용이 이곳에서 일어난다.<br>
+                잎자루는 잎몸과 줄기를 연결하는 부분이고, 턱잎의 대부분은 잎이 자람에 따라 떨어진다.</p>
+            
+        </div>
+    </div>    
+</body>
+</html>
