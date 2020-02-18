@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애플에 대해서 알아보자 </title>
+    <style>
+    /* To-do : 결과 웹 페이지 이미지와 주석을 보고, 빈 클래스에 적절한 클래스명 집어 넣기 & 주석 되어 있는 부분 풀어보면서 어떤 기능하는지 확인 */
+    /* 박스 설정 */
+    .sizing {
+        margin: auto;
+        width: 80%;
+    }
+    .bgimg {
+        background: rgba(0, 0, 0, 0.2) url(https://images.unsplash.com/photo-1503852460961-aa7ffdd3d64d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-position: 0 -140px;
+    }
+    .rd-15px {
+        border-radius: 50px;
+        
+    }
+    .flt-lf{
+        float: left;
+    }
+    .flt-rt{
+        float: right;
+    }
+    
+    /* 테이블 설정 */
+    .table {
+        display: table;
+        clear: left;
+    }
+    .table div {
+        display: table-cell;
+    }
+    .onethird {
+        width: 33.3%;
+    }
+    .twothird {
+        width: 66.6%;
+    }
+
+    /* 시맨틱 요소별 설정 */
+    header {
+        margin: auto;
+        height: 160px;
+
+        color: whitesmoke;
+        font-size: 4rem;
+        font-family: "Gungsuh";
+        text-align: center;
+        text-shadow: 3px 3px black;
+        
+    }
+    header div {
+        
+        vertical-align: middle;
+        
+    }
+    
+    nav {
+        
+        overflow: auto;
+        
+    }
+    nav ul {
+        
+        float: right;
+        
+        margin: 30px;
+
+        text-align: left;
+        
+    }
+    nav ul li {
+        
+        display: inline-block;
+
+        padding: 10px;
+
+        font-size: 1.3rem;
+        
+    }
+    nav a {
+        
+        color: white;
+        text-decoration: none;
+        
+    }
+    nav li:hover {
+        
+        font-weight: bold;
+        text-decoration: underline;
+        
+    }
+
+    article {
+        
+        overflow: auto;
+
+        margin: 10px 0 0;
+        border: 1px solid  grey;
+        padding: 30px;
+
+        line-height: 1.6;
+        
+    }
+    article img {
+        
+        width: 40%;
+        margin: 25px;
+        
+    }
+    article span {
+        
+        color: #1b262c;
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+    }
+    article p {
+        
+        color: #0f4c75;
+        font-size: 1.1rem;
+        
+    }
+    article > div {
+        
+        padding: 0 20px;
+        
+    }
+    article div.table {
+        
+        padding: 0 10px;
+        
+    }
+    article div.table div {
+        
+        padding: 0 10px;
+        text-align: left;
+        
+    }
+    .ref {
+        
+        font-style: italic;
+        text-align: right;
+        clear: left;
+        
+    }
+
+    footer {
+        
+        overflow: auto;
+
+        height: 100px;
+        
+    }
+    footer div {
+        
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        margin-top: 50px;
+        
+    }
+    footer img {
+        
+        position: relative;
+        float: left;
+
+        height: 30px;
+        margin: 20px;
+        
+    }
+    </style>    
+</head>
+<body>
+    <div class="sizing bgimg rd-15px" style="border-style:  dotted;">
+        <!--
+            1. 크기를 디스플레이의 60%, 좌우 중앙정렬
+            2. 배경 이미지 설정
+            3. 15px의 곡률 주기
+        -->
+        <header class="table">
+            <!-- 좌측에 위치한 테이블 요소로 만들기 -->
+            <div>
+                Apple
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#shape">로고</a></li>
+                <li><a href="#size">역사</a></li>
+                <li><a href="#ecology">소개</a></li>
+                <li><a href="#etc">제품</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="sizing">
+        <!-- 디스플레이의 60%, 좌우 중앙정렬 -->
+        <article class="rd-15px">
+            <!-- 곡률 15px -->
+            <div>
+                <img class="rd-15px flt-lf" src="https://waylandlibrary.org/wp-content/uploads/2017/08/4b570687fbe6346b087d14ab741d4d9e-apple-logo-apple-products-300x300.jpg" alt="apple2">
+                <!--
+                    1. 곡률 15px
+                    2. 이미지 좌측 float
+                -->
+                <span id="rd-15px flt-lf">로고</span><hr>
+                <p>애플의 한입 베어먹은듯한 모습의 사과 로고의 유래에 대해서는 여러가지 설이 있다. 컴퓨터의 이론을 확립한 앨런 튜링이 독이 든 사과를 한입 배어물고 죽었다는 점에 착안하여 그를 추모하기 위해 만들었다는 이야기도 있고, 성경에 나온 이브가 사과를 한입 배어물어 인류의 운명이 바뀐것처럼 컴퓨터가 인류의 문명을 바꿀거라는 스티브잡스의 확신에 의한 것이라는 설, 그리고 처음에 도안을 내놓았을 때 토마토인지 사과인지 구분할 수 없어 한입 배어먹은 모습으로 만들었다는 설도 있으며, 단순히 아이작 뉴튼을 기념하는데서 시작되었다는 말도 있다. 그리고 그는 초창기 때 로고를 무엇으로 정할까 고민하다가 항상 고민이 있을때 가는 사과 농장으로 가서 쉬던 중 한 입 베어 먹은 듯한 사과를 생각하게 되었다고도 한다. 하지만 유래가 어떤 것인지는 정확하게 밝혀지지 않았다. 그러나 최근 스티브 잡스의 공식 전기가 출판되면서 수록된 롭 야노프가 처음 애플의 로고 제작을 의뢰받고 만든 2가지 도안(사과를 한 입 베어문 것과 베어물지 않은 것) 중 한 입 베어물지 않은 것은 체리인지 사과인지 구분할 수 없어 투표를 통해 현재의 한 입 베어문 사과 로고가 탄생되었다는 설이 가장 유력하다.</p>
+            </div>
+            <div class="table">
+                <!-- 좌측에 위치한 테이블 요소로 만들기 -->
+                <div class="onethird">
+                    <!-- 요소의 1/3 차지 -->
+                    <span id="size">역사</span><hr>
+                    <p>애플(Apple Inc.)은 1976년 4월 1일 스티브 잡스(Steve Jobs)와 스티브 워즈니악(Steve Wozniac), 로널드 웨인(Ronald Wayne)이 설립한 개인용 컴퓨터 회사였다. 1976년 7월에 조립식 개인용 컴퓨터인 애플I 키트를 최초로 판매하기 시작했다. 1977년 1월 회사를 공개하고 애플II 컴퓨터를 판매하기 시작했다. 애플은 1984년에 그래픽 유저 인터페이스(GUI)를 갖춘 매킨토시 컴퓨터를 출시하면서 개인용 컴퓨터 시장에 돌풍을 몰고 왔다. 그러나 높은 가격과 애플리케이션 프로그램 부족으로 큰 성공을 거두지는 못했다. 1985년에는 경영난으로 1983년에 영입한 CEO 존 스컬리(John Sculley)에게 밀려 스티브 잡스가 퇴출되었다. 스티브 잡스의 퇴출 이후 애플컴퓨터 회사는 IBM 호환용 PC의 위력에 밀려 시장에서 고전했다.</p>
+                </div>
+                <div class="twothird">
+                    <!-- 요소의 2/3 차지 -->
+                    <span id="ecology">소개</span><hr>
+                    <p>애플은 기술 혁신을 통한 시장 확보의 신화를 만들었다. 매킨토시 컴퓨터로 개인용 컴퓨터의 신화를 이룬 애플은 아이팟과 아이폰을 개발·판매하면서 거대 기업으로 떠올랐다. 애플은 아이팟과 아이튠스를 결합해 콘텐츠의 유료화에 성공했다. 그러나 이러한 애플 기술 혁신의 이면에는 폐쇄적인 애플 식 닫힌 체제가 놓여 있다.</p>
+                </div>
+            </div>
+            <div>
+                <span id="etc">기타정보</span><hr>
+                <img class="rd-15px flt-rt" src="https://i.pinimg.com/236x/56/0e/7b/560e7b9eef4de0708f8535225d6e5ec5.jpg" alt="apple3">
+                <p> Mac iPad iPhone Watch Music (각 링크 넣을것!) </p>
+            </div>
+            <div class="ref">[위키백과] 애플</div>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <a href="https://github.com/" target="_blank">
+                <img src="https://tettra.co/wp-content/uploads/2019/03/integrations-github-logo.png" alt="github">
+            </a>
+            <a href="https://unsplash.com/" target="_blank">
+                <img src="https://unsplash-assets.imgix.net/marketing/press-logotype.svg?auto=format&fit=crop&q=60" alt="unsplash">
+            </a>
+            <a href="https://terms.naver.com/" target="_blank">
+                <img src="https://mblogthumb-phinf.pstatic.net/20141203_173/dic_master_1417582673615KpXfe_JPEG/%C1%F6%BD%C4%B9%E9%B0%FA%B7%CE%B0%ED.jpg?type=w2" alt="naver_terms">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -9,19 +9,19 @@
         div.line {
             height: 100px;
             background-color: khaki;
-            line-height: 100px;
+            line-height: 100px; /* 중간 정렬으로 맞추도록 설정 */
             vertical-align: middle;
         }
 
         div.table {
             height: 100px;
             background-color: lavender;
-
+            display: table;
             margin: auto;
         }
 
         div.table>div {
-
+            display: table-cell; /* 중간으로 정렬 라인하이트로 맞춰주지 않아도 대신 역할*/
             vertical-align: middle;
         }
 
@@ -35,6 +35,11 @@
         .center div {
             background-color: aqua;
             margin: 0;
+            position: absolute; /* 절대위치 */
+            top : 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 위치를 조금 바꿔준다는 것 */
+            /* overflow: auto; */
             /* 
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -46,12 +51,15 @@
 <body>
     <h1>정렬 (Align)</h1>
     <h2>수직 정렬</h2>
-    <div class="line">
-        line-height를 사용해서 수직 정렬
+    <div class="line" style="overflow:auto">
+        line-height를 사용해서 수직 정렬 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reprehenderit in ipsum qui inventore iste consectetur quibusdam doloribus soluta, maxime debitis voluptatibus, est quidem, aliquam nisi laborum temporibus sunt omnis?
+        Facilis aut numquam veniam perspiciatis ullam autem magni, in fugit voluptate soluta assumenda ut incidunt beatae iure harum modi voluptatibus rem repudiandae dicta ab adipisci facere aliquid dolorum. Incidunt, facilis!
+        Accusamus alias corporis blanditiis rerum quos culpa ad accusantium incidunt et amet? Nisi animi aliquid veniam debitis rem unde beatae porro corrupti optio sapiente? Quia, ratione voluptatum? Quasi, eum pariatur?
     </div>
     <div class="table">
         <div>
-            table 속성을 사용해 수직 정렬
+            table 속성을 사용해 수직 정렬 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reprehenderit in ipsum qui inventore iste consectetur quibusdam doloribus soluta, maxime debitis voluptatibus, est quidem, aliquam nisi laborum temporibus sunt omnis?
+            Facilis aut numquam veniam perspiciatis ullam autem magni, in fugit voluptate soluta assumenda ut incidunt beatae iure harum modi voluptatibus rem repudiandae dicta ab adipisci facere aliquid dolorum. Incidunt, facilis!
         </div>
     </div>
     <br>
